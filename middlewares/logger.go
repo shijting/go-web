@@ -8,7 +8,6 @@ import (
 
 func Logger() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		println("sldfjsl")
 		start := time.Now()
 		path := c.Request.URL.Path
 		query := c.Request.URL.RawQuery

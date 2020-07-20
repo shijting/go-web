@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/fsnotify/fsnotify"
 	"github.com/shijting/go-web/boot/mysql"
+	"github.com/shijting/go-web/boot/redis"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"log"
@@ -76,6 +77,10 @@ func init() {
 		err := mysql.Reload()
 		if err != nil {
 			zap.L().Error("mysql 重置失败:", zap.Error(err))
+		}
+		err = redis.Reload()
+		if err != nil {
+			zap.L().Error("redis 重置失败:", zap.Error(err))
 		}
 	})
 

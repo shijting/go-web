@@ -16,6 +16,6 @@ mysql:
   max_idle_conns: 100
   max_open_conns: 1
 redis:
-  host: "127.0.0.1"
+  host: "106.53.5.146"
   port: 6379
-  auth: "shijinting0510"
+  auth: "shijinting"

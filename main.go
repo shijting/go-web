@@ -6,6 +6,7 @@ import (
 	"github.com/shijting/go-web/boot"
 	"github.com/shijting/go-web/boot/logger"
 	"github.com/shijting/go-web/boot/mysql"
+	"github.com/shijting/go-web/boot/redis"
 	"github.com/shijting/go-web/boot/setup"
 	_ "github.com/shijting/go-web/config"
 	"github.com/spf13/viper"
@@ -20,12 +21,17 @@ import (
 func main() {
 	logger.Init()
 	defer zap.L().Sync()
-	r := setup.Init()
+
 	// mysql初始化
 	mysql.Init()
 	defer mysql.Close()
+	// 初始化redis
+	redis.Init()
+	defer redis.Close()
+	// 加载路由
+	r := setup.Init()
 	serv := &http.Server{
-		Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),
+		Addr:    fmt.Sprintf(":%d", viper.GetInt("port")),
 		Handler: r,
 	}
 	go func() {
