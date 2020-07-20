@@ -1,0 +1,26 @@
+{"level":"INFO","time":"2020-07-19T14:26:41.456+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:26:42.089+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0.0009981}
+{"level":"INFO","time":"2020-07-19T14:26:42.279+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:26:42.453+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:26:44.423+0800","caller":"go-web/main.go:39","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T14:27:21.041+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:27:41.805+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:28:13.633+0800","caller":"go-web/main.go:39","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T14:28:26.501+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:28:26.904+0800","caller":"middlewares/logger.go:18","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0}
+{"level":"INFO","time":"2020-07-19T14:34:20.740+0800","caller":"go-web/main.go:39","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T14:51:36.780+0800","caller":"go-web/main.go:39","msg":"invalid database source"}
+{"level":"INFO","time":"2020-07-19T14:52:47.299+0800","caller":"go-web/main.go:39","msg":"invalid database source"}
+{"level":"INFO","time":"2020-07-19T15:03:32.990+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T20:05:16.520+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T20:15:28.722+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T20:25:45.642+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T20:26:40.645+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T21:35:03.463+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T21:36:48.724+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T21:38:42.616+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T21:39:21.421+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-19T21:39:55.818+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-20T10:45:34.810+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-20T10:47:01.853+0800","caller":"go-web/main.go:43","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-20T10:51:43.288+0800","caller":"go-web/main.go:43","msg":"interrupt"}

@@ -1,0 +1,21 @@
+name: "go_web"
+mode: "dev"
+port: 3000
+logger:
+  level: "debug"
+  logfile: "go_web.log"
+  max_size: 300
+  max_age: 30
+  max_backups: 30
+mysql:
+  host: "106.53.5.146"
+  port: 3306
+  user: "mysql57"
+  password: "shijinting0510"
+  dbname: go-micro
+  max_idle_conns: 100
+  max_open_conns: 1
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  auth: "shijinting0510"
