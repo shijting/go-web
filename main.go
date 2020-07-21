@@ -30,7 +30,13 @@ func main() {
 	redis.Init()
 	defer redis.Close()
 	// 雪花算法生成唯一id
-	snowflake.Init(50000)
+	snowflake.Init(10)
+	go func() {
+		for {
+			fmt.Println(<-snowflake.Ids)
+			time.Sleep(1 * time.Second)
+		}
+	}()
 	fmt.Println()
 	// 加载路由
 	r := setup.Init()

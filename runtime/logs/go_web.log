@@ -60,3 +60,5 @@
 {"level":"INFO","time":"2020-07-21T10:44:42.284+0800","caller":"go-web/main.go:58","msg":"interrupt"}
 {"level":"INFO","time":"2020-07-21T10:45:08.550+0800","caller":"go-web/main.go:58","msg":"interrupt"}
 {"level":"INFO","time":"2020-07-21T10:48:41.903+0800","caller":"go-web/main.go:59","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T11:09:03.077+0800","caller":"go-web/main.go:59","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T11:09:38.554+0800","caller":"go-web/main.go:59","msg":"interrupt"}
