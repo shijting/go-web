@@ -55,3 +55,8 @@
 {"level":"INFO","time":"2020-07-20T22:07:45.093+0800","caller":"go-web/main.go:49","msg":"interrupt"}
 {"level":"INFO","time":"2020-07-20T22:08:13.533+0800","caller":"middlewares/logger.go:17","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36","errors":"","duration":0.0070109}
 {"level":"INFO","time":"2020-07-20T22:09:45.860+0800","caller":"go-web/main.go:49","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T10:02:08.097+0800","caller":"go-web/main.go:60","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T10:42:53.975+0800","caller":"go-web/main.go:58","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T10:44:42.284+0800","caller":"go-web/main.go:58","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T10:45:08.550+0800","caller":"go-web/main.go:58","msg":"interrupt"}
+{"level":"INFO","time":"2020-07-21T10:48:41.903+0800","caller":"go-web/main.go:59","msg":"interrupt"}

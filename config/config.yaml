@@ -1,6 +1,7 @@
 name: "go_web"
 mode: "dev"
 port: 3000
+machine_id: 1
 logger:
   level: "debug"
   logfile: "go_web.log"

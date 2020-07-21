@@ -9,6 +9,7 @@ import (
 	"github.com/shijting/go-web/boot/redis"
 	"github.com/shijting/go-web/boot/setup"
 	_ "github.com/shijting/go-web/config"
+	"github.com/shijting/go-web/libs/snowflake"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"net/http"
@@ -28,6 +29,9 @@ func main() {
 	// 初始化redis
 	redis.Init()
 	defer redis.Close()
+	// 雪花算法生成唯一id
+	snowflake.Init(50000)
+	fmt.Println()
 	// 加载路由
 	r := setup.Init()
 	serv := &http.Server{
