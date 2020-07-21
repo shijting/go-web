@@ -7,11 +7,12 @@ import (
 	"github.com/shijting/go-web/boot/logger"
 	"github.com/shijting/go-web/boot/mysql"
 	"github.com/shijting/go-web/boot/redis"
-	"github.com/shijting/go-web/boot/setup"
 	_ "github.com/shijting/go-web/config"
-	"github.com/shijting/go-web/libs/snowflake"
+	"github.com/shijting/go-web/libs/validator"
+	"github.com/shijting/go-web/routes"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
+	"log"
 	"net/http"
 	"os"
 	"os/signal"
@@ -29,17 +30,15 @@ func main() {
 	// 初始化redis
 	redis.Init()
 	defer redis.Close()
+
+	err := validator.InitTrans("zh")
+	if err != nil {
+		log.Fatal(err)
+	}
 	// 雪花算法生成唯一id
-	snowflake.Init(10)
-	go func() {
-		for {
-			fmt.Println(<-snowflake.Ids)
-			time.Sleep(1 * time.Second)
-		}
-	}()
-	fmt.Println()
+	//snowflake.Init(10000)
 	// 加载路由
-	r := setup.Init()
+	r := routes.Init()
 	serv := &http.Server{
 		Addr:    fmt.Sprintf(":%d", viper.GetInt("port")),
 		Handler: r,
