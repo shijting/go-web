@@ -7,13 +7,13 @@ import (
 )
 
 type Response struct {
-	Code int
-	Msg  interface{}
-	Data interface{}
+	Code int         `json:"code"`
+	Msg  interface{} `json:"msg"`
+	Data interface{} `json:"data"`
 }
 
 func ValidateError(err error) (resp *Response) {
-	zap.L().Error("SignUp with invalid param", zap.Error(err))
+	zap.L().Error("", zap.Error(err))
 	errs, ok := err.(validator.ValidationErrors)
 	if !ok {
 		resp = &Response{

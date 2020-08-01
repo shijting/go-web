@@ -14,7 +14,7 @@ mysql:
   port: 3306
   user: "mysql57"
   password: "shijinting0510"
-  dbname: go-micro
+  dbname: go-web
   max_idle_conns: 100
   max_open_conns: 1
 redis:
