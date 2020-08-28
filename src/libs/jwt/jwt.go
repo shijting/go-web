@@ -15,7 +15,7 @@ const (
 )
 
 // 密钥(盐)
-var Secret = []byte("亚索主E，QAQ")
+var Secret = []byte("亚索主E，QEQ")
 
 type Claims struct {
 	UserId int64 `json:"user_id"`
@@ -80,6 +80,10 @@ func ParseRefreshToken(aToken, rToken string) (newAccessToken string, err error)
 	_, err = jwt.ParseWithClaims(aToken, claims, func(token *jwt.Token) (interface{}, error) {
 		return Secret, nil
 	})
+	if claims.UserId == 0 {
+		err = errors.New("access token is invalid")
+		return
+	}
 	// 判断access token是过期 并且refresh token没有过期则生成新的access token
 	if err != nil {
 		v := err.(*jwt.ValidationError)

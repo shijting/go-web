@@ -1,7 +1,7 @@
 package snowflake
 
 import (
-	"github.com/shijting/go-web/pkg/snowflake"
+	"github.com/shijting/go-web/src/pkg/snowflake"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"time"

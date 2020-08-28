@@ -3,8 +3,8 @@ package config
 import (
 	"fmt"
 	"github.com/fsnotify/fsnotify"
-	"github.com/shijting/go-web/boot/mysql"
-	"github.com/shijting/go-web/boot/redis"
+	"github.com/shijting/go-web/src/boot/mysql"
+	"github.com/shijting/go-web/src/boot/redis"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"log"
@@ -54,10 +54,10 @@ func init() {
 	//Config.Mysql = new(Mysql)
 	//Config.Logger = new(Logger)
 	//Config.Redis = new(Redis)
-	fmt.Println("配置加载中...")
+	log.Println("配置加载中...")
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("config/")
+	viper.AddConfigPath("src/config/")
 	if err := viper.Unmarshal(Config); err != nil {
 		log.Fatal(err)
 	}

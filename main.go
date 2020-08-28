@@ -3,13 +3,13 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/shijting/go-web/boot"
-	"github.com/shijting/go-web/boot/logger"
-	"github.com/shijting/go-web/boot/mysql"
-	"github.com/shijting/go-web/boot/redis"
-	_ "github.com/shijting/go-web/config"
-	"github.com/shijting/go-web/libs/validator"
-	"github.com/shijting/go-web/routes"
+	"github.com/shijting/go-web/src/boot"
+	"github.com/shijting/go-web/src/boot/logger"
+	"github.com/shijting/go-web/src/boot/mysql"
+	"github.com/shijting/go-web/src/boot/redis"
+	_ "github.com/shijting/go-web/src/config"
+	"github.com/shijting/go-web/src/libs/validator"
+	"github.com/shijting/go-web/src/routes"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"log"
@@ -41,7 +41,7 @@ func main() {
 	r := routes.Init()
 	serv := &http.Server{
 		Addr:    fmt.Sprintf(":%d", viper.GetInt("port")),
-		Handler: r,
+		Handler: r.Engine,
 	}
 	go func() {
 		if err := serv.ListenAndServe(); err != nil {

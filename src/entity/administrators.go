@@ -20,9 +20,9 @@ func (Administrators) TableName() string {
 }
 
 type AdministratorInsert struct {
-	Name          string    `gorm:"column:name" json:"name"`
-	Email         string    `gorm:"column:email" json:"email"`
-	Password      string    `gorm:"column:password" json:"password"`
+	Name          string    `gorm:"column:name" json:"name" binding:"required,gte=2,lte=6"`
+	Email         string    `gorm:"column:email" json:"email" binding:"required,email"`
+	Password      string    `gorm:"column:password" json:"password" binding:"required"`
 	LastLoginDate time.Time `gorm:"column:last_login_date" json:"last_login_date"`
 	LastLoginIp   string    `gorm:"column:last_login_ip" json:"last_login_ip"`
 	Status        uint8     `gorm:"column:status" json:"status"`

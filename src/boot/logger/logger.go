@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/shijting/go-web/boot"
+	"github.com/shijting/go-web/src/boot"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
